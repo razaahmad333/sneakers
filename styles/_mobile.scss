@@ -162,7 +162,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
     img {
       width: 13px;
       opacity: 0.8;
@@ -470,9 +469,9 @@ nav {
   display: none;
 }
 
-// .cart-modal {
-//   display: none;
-// }
+.cart-modal {
+  display: none;
+}
 
 .sidebar-modal {
   display: none;

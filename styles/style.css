@@ -628,7 +628,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 10px;
   }
   .cart-modal .delete img {
     width: 13px;
@@ -935,6 +934,9 @@
   .single-product-modal {
     display: none;
   }
+  .cart-modal {
+    display: none;
+  }
   .sidebar-modal {
     display: none;
   }
@@ -942,5 +944,17 @@
 
 .d-none {
   display: none;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  color: #b6bcc8;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.attribution a {
+  color: #b6bcc8;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

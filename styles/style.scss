@@ -11,3 +11,14 @@
 .d-none {
   display: none;
 }
+
+.attribution {
+  font-size: 0.8rem;
+  color: $grayish-blue;
+  text-align: center;
+  padding: 10px 0;
+  a {
+    color: $grayish-blue;
+    text-decoration: underline;
+  }
+}

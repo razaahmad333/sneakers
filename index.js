@@ -27,6 +27,15 @@ const plus = document.querySelector(".plus");
 const minus = document.querySelector(".minus");
 const input = document.querySelector(".input");
 
+input.addEventListener("change", (e) => {
+  if (input.value < 0) {
+    input.value = 1;
+  }
+  if (Number(input.value) === 0) {
+    input.value = 0;
+  }
+});
+
 plus.addEventListener("click", () => {
   input.value = parseInt(input.value) + 1;
 });
@@ -88,7 +97,7 @@ Array.from(select_from).forEach((item) => {
 const cart_toggler = document.querySelector("#cart-toggler");
 const cart_modal = document.querySelector(".cart-modal");
 
-// cart_modal.style.display = "none";
+cart_modal.style.display = "none";
 
 cart_toggler.addEventListener("click", () => {
   cart_modal.style.display === "block"
