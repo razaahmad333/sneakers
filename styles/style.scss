@@ -1,0 +1,13 @@
+@import "globalVariables";
+
+@media screen and (min-width: 901px) {
+  @import "./desktop";
+}
+
+@media screen and (max-width: 900px) {
+  @import "./mobile";
+}
+
+.d-none {
+  display: none;
+}

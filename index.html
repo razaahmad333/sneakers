@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="index.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="sidebar-modal">
+      <div class="sidebar-modal-content">
+        <div class="sidebar-modal-header">
+          <img
+            id="sidebar-modal-closer"
+            src="./images/icon-close2.svg"
+            alt=""
+          />
+        </div>
+        <div class="sidebar-modal-items">
+          <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="show-on-small-screen menu">
+        <img id="sidebar-modal-trigger" src="./images/icon-menu.svg" alt="m" />
+      </div>
+      <div class="brand"><img src="./images/logo.svg" alt="sneakers" /></div>
+      <ul>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="right-side">
+        <div class="shop-icon">
+          <img id="cart-toggler" src="./images/icon-cart.svg" alt="cart" />
+          <span class="carts-quantity cart-is-empty">3</span>
+        </div>
+        <div class="avatar-icon">
+          <img src="./images/image-avatar.png" alt="avatar" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="cart-modal">
+      <div class="cart-modal-content">
+        <div class="cart-modal-header">
+          <h5>Cart</h5>
+        </div>
+        <hr />
+        <div class="cart-modal-body">
+          <div class="cart-modal-item cart-is-empty">
+            <div class="cart-modal-item-image">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="shoe" />
+            </div>
+            <div class="cart-modal-item-details">
+              <p>
+                <span> Fall Limited Edition Sneakers $125.00 x 3 </span>
+                <span class="total">$375.00</span>
+              </p>
+            </div>
+
+            <div class="delete">
+              <img src="./images/icon-delete.svg" alt="x" />
+            </div>
+          </div>
+          <div class="cart-modal-item cart-is-empty">
+            <div class="cart-modal-item-image">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="shoe" />
+            </div>
+            <div class="cart-modal-item-details">
+              <p>
+                <span> Fall Limited Edition Sneakers $125.00 x 3 </span>
+                <span class="total">$375.00</span>
+              </p>
+            </div>
+
+            <div class="delete">
+              <img src="./images/icon-delete.svg" alt="x" />
+            </div>
+          </div>
+          <div class="cart-modal-item cart-is-empty">
+            <div class="cart-modal-item-image">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="shoe" />
+            </div>
+            <div class="cart-modal-item-details">
+              <p>
+                <span> Fall Limited Edition Sneakers $125.00 x 3 </span>
+                <span class="total">$375.00</span>
+              </p>
+            </div>
+            <div class="delete">
+              <img src="./images/icon-delete.svg" alt="x" />
+            </div>
+          </div>
+
+          <div class="d-none">Your cart is empty.</div>
+
+          <div class="checkout-button"><button>Checkout</button></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="main">
+      <div class="photos">
+        <div class="main-photo">
+          <div class="navigator show-on-small-screen" id="previous">
+            <img src="./images/icon-previous.svg" />
+          </div>
+          <img id="main-photo" src="./images/image-product-1.jpg" alt="p1" />
+          <div class="navigator show-on-small-screen" id="next">
+            <img src="./images/icon-next.svg" />
+          </div>
+        </div>
+        <div class="more-photos">
+          <div class="photo active">
+            <img
+              class="select-from"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="p"
+            />
+          </div>
+          <div class="photo">
+            <img
+              class="select-from"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="p"
+            />
+          </div>
+          <div class="photo">
+            <img
+              class="select-from"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="p"
+            />
+          </div>
+          <div class="photo">
+            <img
+              class="select-from"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="p"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <div class="sneaker-company">SNEAKER COMPANY</div>
+        <div class="fall-limited">Fall Limited Edition <br />Sneakers</div>
+        <div class="short-para">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </div>
+
+        <div class="discount-value">
+          <div class="price">$125.00</div>
+          <div class="discount">50%</div>
+        </div>
+
+        <div class="original-price">$250.00</div>
+        <div class="action-buttons">
+          <div class="quantity-set">
+            <button class="minus">
+              <img src="./images/icon-minus.svg" alt="" />
+            </button>
+            <input type="text" class="input" value="0" />
+            <button class="plus">
+              <img src="./images/icon-plus.svg" alt="" />
+            </button>
+          </div>
+
+          <button class="add-to-cart">
+            <div class="cart"><img src="./images/icon-cart2.svg" alt="" /></div>
+            <div class="text">Add to cart</div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="single-product-modal">
+      <div class="single-product-modal-wrapper">
+        <div class="single-product-modal-header">
+          <img
+            id="single-product-modal-closer"
+            src="./images/icon-close.svg"
+            alt="x"
+          />
+        </div>
+        <div class="single-product-modal-body">
+          <div class="single-product-modal-main-photo">
+            <div class="navigator" id="single-product-modal-previous">
+              <img src="./images/icon-previous.svg" />
+            </div>
+            <img
+              id="single-product-modal-main-photo"
+              src="./images/image-product-1.jpg"
+              alt="p1"
+            />
+            <div id="single-product-modal-next" class="navigator">
+              <img src="./images/icon-next.svg" />
+            </div>
+          </div>
+          <div class="single-product-modal-more-photos">
+            <div class="single-product-modal-photo active">
+              <img
+                class="single-product-modal-select-from"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="p"
+              />
+            </div>
+            <div class="single-product-modal-photo">
+              <img
+                class="single-product-modal-select-from"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="p"
+              />
+            </div>
+            <div class="single-product-modal-photo">
+              <img
+                class="single-product-modal-select-from"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="p"
+              />
+            </div>
+            <div class="single-product-modal-photo">
+              <img
+                class="single-product-modal-select-from"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="p"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    Collections Men Women About Contact Sneaker Company Fall Limited Edition
+    Sneakers These low-profile sneakers are your perfect casual wear companion.
+    Featuring a durable rubber outer sole, they’ll withstand everything the
+    weather can offer. $125.00 50% $250.00 0 Add to cart
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ahmad Raza</a>.
+    </div> -->
+  </body>
+</html>
