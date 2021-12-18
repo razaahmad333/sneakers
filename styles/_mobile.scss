@@ -28,13 +28,13 @@ a {
   background: rgba(0, 0, 0, 0.75);
   z-index: 9999;
   .sidebar-modal-content {
-    width: 50%;
+    width: 80%;
     height: 100%;
-    max-width: 200px;
+    max-width: 400px;
     background: $white;
 
-    padding: 20px;
-    padding-top: 10px;
+    padding: 40px;
+    padding-top: 20px;
     .sidebar-modal-header {
       padding: 10px 0;
     }
